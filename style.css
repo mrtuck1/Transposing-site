@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100vh;
+    line-height: 1.2;
+    padding:10px 10px;
+   display: grid;
+    grid-template-columns: 120px 1fr 2fr 2fr 1fr 30px;
+    grid-template-rows: auto 2fr 2fr 2fr 60px 30px;
+    grid-template-areas: 
+        "menu . . . ."
+        "menu . . . ."
+        "menu . chords chords ."
+        "menu . chords chords . "
+        "menu . chrd-select chrd-select . "
+        "menu . . . . ";
+        background: rgb(214, 214, 214);
+    
+    
+    
+    
+}
+
+/* Navigation  ----------------------------------------------*/
+
+nav{
+    background: rgb(229, 141, 66);
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 30px;
+    grid-area: menu;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    line-height: 1.5;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul{
+    padding-bottom: 30px
+}
+
+
+/* Hover -----------------------------------------------------------*/
+
+nav ul li a:active,
+nav ul li a:hover{
+    color: antiquewhite;
+   
+}
+
+/*----Chord finder------------------------------------------------------------*/
+
+main{
+    grid-area: chords;
+    background: #cecece;
+}
+#Chord-finder{
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+.pick-chords{
+    display: flex;
+    padding: 15px 15px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+    background: wheat;
+    width: auto;
+    height: auto;
+    grid-area: chrd-select;
+}
+
+
+
+
+
+
+
+
+/* Media ------------------------------------------*/
+
+
+
+@media screen and (max-width: 700px) {
+  body{
+
+grid-template-areas: 
+        "menu menu menu menu menu"
+        ". . . . ."
+        ". . chords chords ."
+        ". . chords chords . "
+        ". . chrd-select chrd-select . "
+        ". . . . . ";
+
+  }
+
+
+  nav{
+      
+      flex-direction: row;
+  }
+  nav ul{
+      display: flex;
+      
+  }
+
+nav ul li a{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+}
