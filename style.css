@@ -76,18 +76,57 @@ main{
     display: flex;
     padding: 15px 15px;
     margin-right: 20px;
-    justify-content: space-evenly;
-    background: wheat;
+    justify-content:flex-start;
+    background: #ffffff;
     width: auto;
     height: auto;
     grid-area: chrd-select;
+    width: 97%;
+   border-bottom: solid;
 }
 
 
+.start-chord{
+    padding-right: 45px;
+    padding-left: 45px
+}
 
 
+.chord-inner{
+    
+    width: 30px;
+    background: white;
+    display: flex;
+    padding-left: 5px;
+    font-size: 16px;
+    border: 1.8px solid #ff6200;
+   
+    
+}
+.chord-inner:after{
+    content: ">";
+    margin-left: 5px;
+    transform: rotate(90deg);
+    font-weight: bold;
+    
+}
 
+.submit{
+    width: 100px;
+    display: flex;
+    border: 1.8px solid #ff6200;
+    margin-left: 300px;
+    background: #ffae72;
+    height: 25px;
+    
+    
+    
+}
 
+.outer-submit {
+    text-align: center;
+   
+}
 
 
 /* Media ------------------------------------------*/
