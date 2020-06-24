@@ -3,12 +3,20 @@
     padding: 0;
     
 }
+
+
+
+/* colors
+rgb(235, 159, 88) orange
+*/
+
+
 body{
     height: 100vh;
     line-height: 1.2;
     padding:10px 10px;
    display: grid;
-    grid-template-columns: 120px 1fr 2fr 2fr 1fr 30px;
+    grid-template-columns: 120px 1fr 2fr 2fr 2fr 30px;
     grid-template-rows: 1fr 2fr 2fr 1fr 60px 30px;
     grid-template-areas: 
         "menu . . . ."
@@ -19,6 +27,7 @@ body{
         "menu . . . . "
         ;
         background: rgb(214, 214, 214); 
+        font-size: 18px;;
 }
 
 /* Navigation  ----------------------------------------------*/
@@ -37,6 +46,7 @@ nav ul li a{
     text-decoration: none;
     color: black;
     line-height: 1.5;
+    font-size: 1.2em;
     
 }
 
@@ -54,14 +64,27 @@ nav ul{
 nav ul li a:active,
 nav ul li a:hover{
     color: antiquewhite;
+    padding:10px 10px;
    
 }
+
+
+.submit:after,
+.submit:hover{
+    background-color:rgb(241, 177, 56);
+    color:white;
+}
+
 
 /*----Chord finder------------------------------------------------------------*/
 
 main{
     grid-area: chords;
     background: #cecece;
+    border: 2px solid rgb(241, 177, 56);
+    
+
+    
 }
 #Chord-finder{
     width: 100%;
@@ -70,7 +93,9 @@ main{
 padding: 30px 30px;
 font-family: Arial, Helvetica, sans-serif;
 color:rgb(65, 65, 65);
-border: 2px solid rgb(241, 177, 56);
+/*border: 2px solid rgb(241, 177, 56);*/
+border: none;
+
 }
 
 .pick-chords{
@@ -82,29 +107,25 @@ border: 2px solid rgb(241, 177, 56);
     width: auto;
     height: auto;
     grid-area: chrd-select;
-    width: 97%;
-   border-bottom: solid;
-   
 }
 
 
 .start-chord{
-    padding-right: 45px;
-    padding-left: 45px
+    text-align: center;
+    
 }
 
 
 .chord-inner{
-    
     width: 30px;
     background: white;
     display: flex;
     padding-left: 5px;
     font-size: 16px;
     border: 1.8px solid #ff6200;
-   
-    
+    padding:10px 10px;
 }
+
 .chord-inner:after{
     content: ">";
     margin-left: 5px;
