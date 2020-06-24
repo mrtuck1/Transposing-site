@@ -83,6 +83,7 @@ main{
     background: #cecece;
     border: 2px solid rgb(241, 177, 56);
     
+    
 
     
 }
@@ -100,39 +101,33 @@ border: none;
 
 .pick-chords{
     display: flex;
-    padding: 15px 15px;
+    padding: 10px 10px;
     margin-right: 20px;
     justify-content:flex-start;
     background: #ffffff;
-    width: auto;
+    width: 100%;
     height: auto;
     grid-area: chrd-select;
+    
 }
 
 
 .start-chord{
-    text-align: center;
+    
     
 }
 
 
 .chord-inner{
-    width: 30px;
+    padding-top: 10px;
     background: white;
-    display: flex;
-    padding-left: 5px;
+    padding-left: 30px;
     font-size: 16px;
     border: 1.8px solid #ff6200;
-    padding:10px 10px;
+    margin-right: 40px
 }
 
-.chord-inner:after{
-    content: ">";
-    margin-left: 5px;
-    transform: rotate(90deg);
-    font-weight: bold;
-    
-}
+
 
 .submit{
     width: 100px;
@@ -150,6 +145,19 @@ border: none;
     padding-top:5px;
    
 }
+
+// inside form
+
+#chords-start{
+    justify-content: center;
+    color: red;
+    
+    
+}
+#chords-end{
+    color: #ff0000;
+}
+
 
 
 /* Media ------------------------------------------*/
