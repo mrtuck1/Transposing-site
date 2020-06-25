@@ -20,8 +20,8 @@
     
     <div class="pick-chords">
         <div class="start-chord">
-           <div class="chord-inner">
-            <form action="#">
+           
+            <form action="javascipt.js">
                 <label for="Chords-start">Start:</label>
                 <select name="start" id="chords-start">
                     <option value="A">A</option>
@@ -31,13 +31,13 @@
                     <option value="D">E</option>
                     <option value="D">F</option>
                     <option value="D">G</option>
+                    <option value="D">#</option>
                 </select>
                 <br><br>
                 </form>
-            </div>
+            
         </div>
         <div class="end-chord">
-           <div class="chord-inner">
            <form action="#">
                 <label for="Chords-end">End:</label>
                 <select name="end" id="chords-end">
@@ -48,20 +48,20 @@
                     <option value="D">E</option>
                     <option value="D">F</option>
                     <option value="D">G</option>
+                    <option value="D">#</option>
                 </select>
                 <br><br>
                 </form>
-               </div>
-            
+               
         </div>
         <div class="submit">
                 <div class="outer-submit">
-                    <input type="submit" value="Submit">
+                    <button type="button" class="submit-btn">Submit</button>
                 </div>
             </div>
         </div>
     </main>
     
-  
+  <script src="myscripts.js"></script>
 </body>
 </html>
