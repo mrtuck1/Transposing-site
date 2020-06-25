@@ -20,8 +20,8 @@ body{
     grid-template-rows: 1fr 2fr 2fr 1fr 60px 30px;
     grid-template-areas: 
         "menu . . . ."
-        "menu . Chord-finder Chord-finder ."
-        "menu . Chord-finder Chord-finder ."
+        "menu . chords chords ."
+        "menu . chords chords ."
         "menu . chrd-select chrd-select . "
         "menu . . . . "
         "menu . . . . "
@@ -100,7 +100,6 @@ font-family: Arial, Helvetica, sans-serif;
 color:rgb(65, 65, 65);
 /*border: 2px solid rgb(241, 177, 56);*/
 border: none;
-    grid-area: Chord-finder;
 
 }
 
