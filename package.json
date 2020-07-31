@@ -1,0 +1,23 @@
+{
+  "name": "Transposing-site",
+  "version": "1.0.0",
+  "description": "Transposing site",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrtuck1/Transposing-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrtuck1/Transposing-site/issues"
+  },
+  "homepage": "https://github.com/mrtuck1/Transposing-site#readme",
+  "dependencies": {
+    "chordsheetjs": "^3.0.0"
+  }
+}
